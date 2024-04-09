@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissor game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Rock Paper Scissors</h1>
+    </header>
+    <main class="mainSection">
+      <p class="actionMessage">Choose an option to start:</p>
+      <div class="choices">
+        <button class="btn" data-rock-btn>
+          <img
+            class="svg"
+            src="./svg/Rock.svg"
+            alt="Raised fist or in game image"
+          />
+        </button>
+        <button class="btn" data-paper-btn>
+          <img
+            class="svg"
+            src="./svg/Paper.svg"
+            alt="Hand with fingers splayed or Paper in game image"
+          />
+        </button>
+        <button class="btn" data-scissors-btn>
+          <img
+            class="svg"
+            src="./svg/Scissor.svg"
+            alt="Victory hand or scissors in game  image"
+          />
+        </button>
+      </div>
+    </main>
+    <div class="result">
+      <h1 data-resut-title>Make your move</h1>
+    </div>
+
+    <div class="scoreSection">
+      <h1>Score</h1>
+      <div class="score" data-score-board>
+        <div class="user">
+          <p class="userLabel">User:</p>
+          <p class="userScore" data-user-score>0</p>
+        </div>
+        <div class="computer">
+          <p class="computerLabel">Computer:</p>
+          <p class="computerScore" data-computer-score>0</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
